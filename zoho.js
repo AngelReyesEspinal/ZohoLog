@@ -266,7 +266,7 @@ function completeZohoLog() {
         }
 
         let textareaValue = "";
-        if (notes.split("Task ").length > 1) {
+        if (notes.split("Task ").length > 2) {
             textareaValue = "Sesión de trabajo realizando la programación necesaria para cumplir con el requerimiento asignado ejecutando las tareas: ";
             const tasksList = notes.split('Task ').filter(x => x).reduce((acc, nv, i, arr) => {
                 if (i !== arr.length - 1) {
